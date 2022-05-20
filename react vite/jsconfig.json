@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./src",
+    "jsx": "preserve",
+    "module": "commonjs",
+    "target": "es6",
+    "checkJs": false,
+    "paths": {/*
+        "@hooks/": ["hooks/"],
+        "@common/": ["common/"],
+        "@login/": ["Login/"],
+        "@register/": ["Register/"],
+        "@reset/": ["ResetPassword/"],
+        "@services/": ["services/"],
+        "@context/": ["context/"],
+        "@configuration/": ["Configuration/"],
+        "@testimonials/": ["Testimonials/"],
+        "@administration/": ["UsersAdministration/"],
+        "@home/": ["Home/"]*/
+      }
+    }, 
+  "include": ["src"],
+  "exclude": ["node_modules", "build"]
+}

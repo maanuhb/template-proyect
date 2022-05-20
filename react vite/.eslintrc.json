@@ -1,0 +1,49 @@
+
+{
+    "env": {
+        "browser": true,
+        "es2021": true
+    },
+    "extends": [
+        "plugin:react/recommended",
+        "airbnb",
+        "plugin:prettier/recommended"
+    ],
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": "latest",
+        "sourceType": "module"
+    },
+    "settings": {
+        "import/resolver": {
+          "alias": {
+            "map": [/* Esto va ente comillas dobles para vos del futuro que hagas las rutas
+              ['@hooks', './src/hooks/'],
+              ['@common', './src/common/'],
+              ['@login', './src/Login/'],
+              ['@register', './src/Register/'],
+              ['@testimonials', './src/Testimonials/'],
+              ['@configuration', './src/Configuration/'],
+              ['@administration', './src/UsersAdministration/'],
+              ['@reset', './src/ResetPassword/'],
+              ['@home', './src/Home/'],
+              ['@services', './src/services/'],
+              ['@context', './src/context/'],
+              ['@reset', './src/ResetPassword/']*/
+            ],
+            "extensions": [".js", ".jsx", "."]
+          }
+        }
+      },
+
+    "plugins": [
+        "react"
+    ],
+    "rules": {
+    "eslint-disable import/no-extraneous-dependencies": "off",
+    "react/react-in-jsx-scope": "off",
+    "react/prop-types": "off"
+  }
+}
